@@ -239,11 +239,12 @@ a:active {
   #experience {
     background: #f5f5f5;
   }
-
+  
   #experience .card h4{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: none;
     color:#5b4a4a;
+    
   }
 
 /*====================================================
