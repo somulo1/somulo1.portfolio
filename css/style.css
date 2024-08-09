@@ -57,9 +57,9 @@ a:active {
     font-size: 1.35rem;
 }
 
-/*==================================================
+/*================================================================================
                   SOCIAL-ICON
-====================================================*/
+==================================================================================*/
   .list-social-icons a {
       color: #0f5499;
   }
@@ -80,9 +80,9 @@ a:active {
       color: #2196f3;
   }
 
-/*==================================================
+/*================================================================================
                     NAV-BAR
-====================================================*/
+==================================================================================*/
   #sideNav .navbar-nav .nav-item .nav-link {
       font-weight: 600;
       text-transform: uppercase;
@@ -132,9 +132,9 @@ a:active {
       }
   }
 
-/*==================================================
+/*====================================================================================
                   BUTTON (Generic)
-====================================================*/
+======================================================================================*/
 
 .btn-general {
     background-color: transparent;
@@ -172,9 +172,9 @@ a:active {
     cursor: pointer;
 }
 
-/*==================================================
+/*=============================================================================
                   SECTION (Generic)
-====================================================*/
+===============================================================================*/
   .heading-border {
       width: 60px;
       height: 10px;
@@ -195,6 +195,7 @@ a:active {
   @media (min-width: 768px) {
       section.resume-section {
           min-height: 100vh;
+          
       }
       section.resume-section .resume-item .resume-date {
           min-width: 18rem;
@@ -216,9 +217,9 @@ a:active {
       color: #f5f6ef !important;
   }
 
-/*==================================================
+/*=================================================================================
                       ABOUT
-====================================================*/
+===================================================================================*/
   #about {
       background-image: url(../img/newbackground.jpg); 
       background-size: cover;
@@ -233,11 +234,11 @@ a:active {
     /* font-size: 100%; */
    *
 
-/*==================================================
+/*==================================================================================
                     EXPERIENCE
-====================================================*/  
+====================================================================================*/  
   #experience {
-    background: #f5f5f5;
+    background: #ffffff;
   }
   
   #experience .card h4{
@@ -247,16 +248,18 @@ a:active {
     
   }
 
-/*====================================================
+/*==============================================================================
                    PORTFOLIO
-======================================================*/
+================================================================================*/
 .fa-search-plus-pointer {
     cursor: pointer; /* Changes the cursor to a hand pointer */
   }
 #portfolio{
     padding:100px 0;
 } 
-
+.caption-port{
+    border-radius: 10px;
+}
 .port-head-cont{
     margin:20px auto 40px auto;
     text-align: center;
@@ -302,7 +305,7 @@ a:active {
     height: 20px;
     margin-top: -12px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
@@ -321,6 +324,7 @@ a:active {
 @media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
+       
     }
 }
 
@@ -335,6 +339,7 @@ a:active {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    border-radius: 20px;
 }
 
 .portfolio-modal .title-bar {
@@ -349,7 +354,7 @@ a:active {
 .portfolio-modal .modal-dialog .modal-content {
     padding: 10px 0 100px 0;
     border: 0;
-    border-radius: 0;
+    
 } 
 
 .portfolio-modal .modal-dialog .modal-content img {
@@ -368,6 +373,7 @@ a:active {
     height: 75px;
     cursor: pointer;
     background-color: transparent;
+    
 }
 
 .portfolio-modal .close-modal:hover {
@@ -407,13 +413,20 @@ a:active {
 @media (max-width: 850px){
     .portfolio-modal .close-modal{
         display: none;
+        border-radius: 20px;
     }
 }  
+#portfolio .portfolio-item img {
+    border-radius: 5px; /* Adjust as needed */
+    display: block;/* Ensure that the image is displayed as a block element */
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
 
-/*====================================================
+/*=================================================================================
                       SKILLS
-======================================================*/
-
+===================================================================================*/
+/* Background styling for the #skills section */
 #skills {
     background-image: url("../img/bg-stats.jpg");
     background-size: cover;
@@ -421,46 +434,57 @@ a:active {
     background-repeat: no-repeat;
 }
 
+/* Styling for the skill cover */
 .skill-cover {
     background-color: rgba(31, 31, 31, 0.68); 
 }
 
-.skill-cover h3{
-  font-family: "hind", sans-serif;
-  font-size: 35px;
-  margin-bottom: 40px;
+/* Heading inside skill-cover */
+.skill-cover h3 {
+    font-family: "hind", sans-serif;
+    font-size: 35px;
+    margin-bottom: 40px;
 }
 
+/* Styling for each skill item */
 .skill-item {
     padding: 20px 0;
     margin-bottom: 30px;
     background: rgba(144, 144, 144, 0.78);
+    border-radius: 5px; /* Ensure rounded corners for skill items */
+    overflow: hidden; /* Ensure contents are clipped to the rounded corners */
 }
 
+/* Icon styling inside skill items */
 .skill-item i {
     color: #2196f3;
 }
 
+/* Heading inside skill items */
 .skill-item h2 {
     color: #fff;
-    font-size: "hind", sans-serif;
+    font-family: "hind", sans-serif; /* Fix font-family usage */
     font-size: 35px;
     font-weight: 700;
     margin-top: 15px;
     margin-bottom: 1px;
+    border-radius: 10px; /* Rounded corners for h2 (may not be visible if block-level) */
+    padding: 10px; /* Add padding to make border-radius more visible */
 }
 
+/* Paragraph inside skill items */
 .skill-item p {
     color: #fff;
     font-family: "hind", sans-serif;
     /*text-transform: uppercase;*/
     font-weight: 300;
     margin-top: 0;
+    border-radius: 5px;
 }
 
-/*====================================================
+/*================================================================================
                       AWARD
-======================================================*/
+==================================================================================*/
  
 #awards {
     background: #f0f0f0;
@@ -558,6 +582,7 @@ a:active {
     border: 1px solid transparent;
     position: relative;
     transition: all 0.3s ease 0s;
+    border-radius: 5px;
 }
 
 #award-box .award:hover .award-content {
@@ -567,7 +592,7 @@ a:active {
 #award-box .award-content:before {
     content: "";
     display: block;
-    width: 14px;
+    width: 15px;
     height: 14px;
     background: #fff;
     border: 1px solid #cfcdcd;
@@ -583,14 +608,15 @@ a:active {
     border-color: #39b3ff;
 }
 
-#award-box .award-content:after {
+#award-box .award-content:after {/*pointers*/
     content: "";
-    width: 11%;
+    width: 12%;
     height: 1px;
     background: #cfcdcd;
     position: absolute;
     top: 28px;
     right: -14%;
+    border-radius: 20px;
 }
 
 #award-box .date {
@@ -622,6 +648,7 @@ a:active {
     color: #777;
     line-height: 28px;
     margin-top: 8px;
+    
 }
 
 #award-box .award:nth-child(2n),
@@ -646,6 +673,7 @@ a:active {
 @media only screen and (max-width: 767px) {
     #award-box {
         padding-left: 20px;
+        
     }
     #award-box:before {
         left: 20px;
@@ -676,9 +704,9 @@ a:active {
     }
 }
 
-/*====================================================
+/*==========================================================================================
                    CONTACT
-======================================================*/
+============================================================================================*/
 
 #contact{
   padding: 50px 0;
