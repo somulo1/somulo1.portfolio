@@ -23,15 +23,18 @@ h6 {
     font-family: 'Saira Extra Condensed', serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #292424;
+    color: #262424;
 }
 
 h1 {
-    font-size: 6rem;
+    text-emphasis-position: bottom;
+    text-align:bottom;
+    font-size: 3rem;
     line-height: 5.5rem;
 }
 p1{
-    color: #ffff; 
+    color: #ffffff;
+    
 }
 h2 {
     font-size: 3.5rem;
@@ -83,8 +86,12 @@ a:active {
   #sideNav .navbar-nav .nav-item .nav-link {
       font-weight: 600;
       text-transform: uppercase;
+      
   }
-
+  .navbar.hidden {
+    top: -60px; /* Adjust based on the height of your navbar */
+    position: fixed;
+  }
   @media (min-width: 992px) {
       #sideNav {
           text-align: center;
@@ -219,11 +226,12 @@ a:active {
       background-repeat: no-repeat;
       max-height:1280px;
       max-width: 1920px;
+      text-align: bottom;
   }
 
-  #about h1 {
+  /* #about h1 {
     /* font-size: 100%; */
-  }
+   *
 
 /*==================================================
                     EXPERIENCE
@@ -241,7 +249,9 @@ a:active {
 /*====================================================
                    PORTFOLIO
 ======================================================*/
-
+.fa-search-plus-pointer {
+    cursor: pointer; /* Changes the cursor to a hand pointer */
+  }
 #portfolio{
     padding:100px 0;
 } 
