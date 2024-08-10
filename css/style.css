@@ -832,6 +832,7 @@ a:active {
     margin: 10; /* Removes default margin from the paragraph */
     font-size: 14px; /* Optional: Sets the font size */
     color: #3e4d5c; /* Optional: Sets the text color */
+    text-align: center;
 }
 .icon-large {
     font-size: 30px; /* Make the icon large */
@@ -842,10 +843,15 @@ a:active {
     color: #000000; /* Bootstrap success color */
     position: relative;
     position:flex;
+    text-align: center;
 }
 
 /* Optional: Styling for the copyright text */
 footer p {
     margin: 3px 0; /* Add some space around paragraphs */
     font-size: 8px; /* Set font size */
+    text-align: center;
+}
+.p{
+    text-align: right;
 }
