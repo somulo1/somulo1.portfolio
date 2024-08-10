@@ -817,3 +817,35 @@ a:active {
     width:100%;
     position:absolute;
 }
+/* Centering the content of the footer div */
+.footer {
+    text-align: center; /* Centers text horizontally */
+    padding: 25px; /* Optional: Adds some padding around the text */
+    background-color: #f1f1f1; /* Optional: Adds a background color */
+    position: relative; /* Optional: Required if you are using absolute positioning for other elements */
+    height: 100px;
+    
+}
+
+/* Additional styling for the paragraph */
+.footer p {
+    margin: 10; /* Removes default margin from the paragraph */
+    font-size: 14px; /* Optional: Sets the font size */
+    color: #3e4d5c; /* Optional: Sets the text color */
+}
+.icon-large {
+    font-size: 30px; /* Make the icon large */
+}
+
+/* Optional: text-success class to color the icon green */
+.text-success {
+    color: #000000; /* Bootstrap success color */
+    position: relative;
+    position:flex;
+}
+
+/* Optional: Styling for the copyright text */
+footer p {
+    margin: 3px 0; /* Add some space around paragraphs */
+    font-size: 8px; /* Set font size */
+}
