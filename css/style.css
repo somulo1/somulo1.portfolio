@@ -817,6 +817,22 @@ a:active {
     width:100%;
     position:absolute;
 }
+.invisible-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* =======================================================================================
+                                FOOTER
+==========================================================================================*/
 /* Centering the content of the footer div */
 .footer {
     text-align: center; /* Centers text horizontally */
