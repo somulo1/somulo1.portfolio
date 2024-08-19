@@ -422,9 +422,8 @@ a:active {
     width: 100%; /* Ensure the image takes up the full width of its container */
     height: auto; /* Maintain aspect ratio */
 }
-
 .description-box {
-    border: 2px solid #c5d2df; /* Border color */
+    border: 2px solid #cedce9; /* Border color */
     padding: 20px; /* Space inside the box */
     margin: 20px auto; /* Space outside the box and centering */
     width: 100%; /* Adjust width as needed */
