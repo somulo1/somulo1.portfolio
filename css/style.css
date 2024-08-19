@@ -422,7 +422,23 @@ a:active {
     width: 100%; /* Ensure the image takes up the full width of its container */
     height: auto; /* Maintain aspect ratio */
 }
-
+.description-box {
+    border: 2px solid #cedce9; /* Border color */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Space outside the box and centering */
+    width: 100%; /* Adjust width as needed */
+    max-width: 800px; /* Max width for larger screens */
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 16px; /* Adjust text size */
+    color: #333; /* Text color */
+  }
+  
+  .description-box p {
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
 /*=================================================================================
                       SKILLS
 ===================================================================================*/
@@ -871,3 +887,6 @@ footer p {
 .p{
     text-align: right;
 }
+
+/* new=============================================================== */
+  /* Ensure the profile image on smaller screens is always visible and fixed to the top right */
