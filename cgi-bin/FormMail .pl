@@ -44,10 +44,10 @@ BEGIN
   $max_recipients    = 5;
   $mailprog          = '/usr/lib/sendmail -oi -t';
   $postmaster        = '';
-  @referers          = qw(https://Me_Sam.Omulo.htm/gi-bin/FormMail .pl);
+  @referers          = qw(https://somulo1.github.io/gi-bin/FormMail .pl);
   @allow_mail_to     = qw(mcomulosammy37@gmail.com);
-  @recipients        = ();
-  %recipient_alias   = ();
+  @recipients        = (mcomulosammy37@gmail.com);
+  %recipient_alias   = (mcomulosammy37@gmail.com);
   @valid_ENV         = qw(REMOTE_HOST REMOTE_ADDR REMOTE_USER HTTP_USER_AGENT);
   $locale            = '';
   $charset           = 'iso-8859-1';
@@ -60,7 +60,7 @@ BEGIN
   $address_style     = 0;
   $send_confirmation_mail = 0;
   $confirmation_text = <<'END_OF_CONFIRMATION';
-From: you@your.com
+From: mcomulosammy37@gmail.com
 Subject: form submission
 
 Thank you your message. I will get back to you shortely.
