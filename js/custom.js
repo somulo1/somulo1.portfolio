@@ -20,6 +20,13 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // Closes responsive menu when scrolling
+  $(window).scroll(function() {
+    if ($('.navbar-collapse').hasClass('show')) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
