@@ -20,7 +20,7 @@ function updateVisitorCount() {
     let count = parseInt(localStorage.getItem(storageKey) || '0', 10);
     count += 1;
     localStorage.setItem(storageKey, count);
-    document.getElementById('visitor-count').textContent = `Visitor Count: ${count}`;
+    document.getElementById('visitor-count').textContent = `...: ${count}`;
 }
 
 // Check if the visitor has a unique identifier cookie
@@ -33,5 +33,5 @@ if (!visitorId) {
 } else {
     // If cookie exists, do not increment the count
     const count = parseInt(localStorage.getItem(storageKey) || '0', 10);
-    document.getElementById('visitor-count').textContent = `Visitor: ${count}`;
+    document.getElementById('visitor-count').textContent = `... ${count}`;
 }
