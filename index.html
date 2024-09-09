@@ -9,16 +9,38 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 <html lang="en">
 
 <head>
-    
+  <script defer src="js/vcount-counter.js"></script>
+  <script src="js/animate.js" defer></script>
+  <script src="js/http.js" defer></script> 
+  <script src="js/disable-dragging.js" defer></script>
+  <script src="js/disable-text-selection.js" defer></script>
+  <script src="js/form-security.js" defer></script>
+  <script src="js/clickjacking-protection.js" defer></script>
+  <script src="js/secure-connection-warning.js" defer></script>
+  <script src="js/rate-limiting.js" defer></script>  
   <script src="https://cdn.emailjs.com/service_g4bm3vo"></script></script>
+  <script src="scripts/blockTrackers.js"></script>
+  <script src="scripts/setCSP.js"></script>
+  <script src="scripts/setReferrerPolicy.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="somulo1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self';">
+    <!-- Include the referrer policy meta tag -->
+    <meta name="referrer" content="no-referrer">  
     
-
+ 
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-F6NNM6WJHW');
+      setCSP();
+  </script>
+  
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-    <title>Me_Sam.omulo</title>
+    <title>somulo1.github.io</title>
 
     <!-- Global stylesheets -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +49,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6NNM6WJHW"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -83,7 +106,10 @@ License URL: https://creativecommons.org/licenses/by/4.0/
               </div>
               </h1>
              
-              <p1 >As an undergraduate pursuing Computer Security and Forensics, <br>
+              <p1 > <p>
+                <!-- <p>Hi, Welcome to My Site</p> -->
+                <!-- <div id="visitor-count">visitor...</div> -->
+                </p>As an undergraduate pursuing Computer Security and Forensics, <br>
                 I am currently expanding my expertise through hands-on experience in full-stack <br>
                 development. My academic background equips me with a solid understanding of cybersecurity <br>
                 principles and forensic analysis, which I am applying to practical software <br>
@@ -126,10 +152,12 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                   </span>
                 </a>
                   </li>
+                  <div id="visitor-count">visitor...</div>
               </ul>
           </div>
+          
       </section>
-
+      
     <!--====================================================
                         EXPERIENCE
     ======================================================-->      
@@ -497,7 +525,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                     <textarea id="message" name="message" class="line-textarea" required></textarea>
                 </div>
                 <div class="form-group">
-                    <!-- <input type="submit" class="btn-submit" value="Send"> -->
+                    <input type="submit" class="btn-submit" value="Send"> 
                 </div>
             </form>
             </div>
