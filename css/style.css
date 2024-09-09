@@ -91,6 +91,7 @@ a:active {
   .navbar.hidden {
     top: -60px; /* Adjust based on the height of your navbar */
     position: fixed;
+    color: #ffffff;
   }
   @media (min-width: 992px) {
       #sideNav {
@@ -102,11 +103,13 @@ a:active {
           flex-direction: column;
           width: 17rem;
           height: 100vh;
+          color: #ffffff;
       }
       #sideNav .navbar-brand {
           display: flex;
           margin: auto auto 0;
           padding: 0.5rem;
+          color: #ffffff;
       }
       #sideNav .navbar-brand .img-profile {
           max-width: 10rem;
@@ -123,6 +126,7 @@ a:active {
       #sideNav .navbar-collapse .navbar-nav {
           flex-direction: column;
           width: 100%;
+          color: #fff;
       }
       #sideNav .navbar-collapse .navbar-nav .nav-item {
           display: block;
@@ -779,7 +783,7 @@ a:active {
   height: 35px;
   width:35px;
   line-height: 35px;
-  border:2px solid #2196f3;
+  border:2px solid #849bad;
   text-align: center;
   margin-right: 10px;
   border-radius: 50%;
@@ -908,7 +912,7 @@ a:active {
 
     .btn-submit {
         align-content: center;
-        background-color: #052c58;
+        background-color:  #2196f3;
         color: #fff;
         border: none;
         padding: 10px 30px;
@@ -922,7 +926,7 @@ a:active {
 }
 
 .btn-submit {
-    background-color: #383e74;
+    background-color:  #2196f3;
     color: #fff;
     border: none;
     padding: 10px 20px;
