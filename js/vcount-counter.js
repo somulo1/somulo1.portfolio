@@ -15,6 +15,11 @@ function getCookie(name) {
     if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
 }
 
+// Function to generate a unique visitor ID
+function generateUniqueId() {
+    return 'unique-id-' + Math.random().toString(36).substr(2, 9) + Date.now();
+}
+
 // Function to update the visitor count
 function updateVisitorCount() {
     let count = parseInt(localStorage.getItem(storageKey) || '0', 10);
@@ -28,7 +33,7 @@ const visitorId = getCookie(cookieName);
 
 if (!visitorId) {
     // If no cookie, set a new cookie with a unique ID
-    setCookie(cookieName, 'unique-id-' + Date.now(), cookieExpireDays);
+    setCookie(cookieName, generateUniqueId(), cookieExpireDays);
     updateVisitorCount(); // Update visitor count
 } else {
     // If cookie exists, do not increment the count
