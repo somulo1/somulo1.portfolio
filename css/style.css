@@ -222,7 +222,14 @@ a:active {
   .text-primary {
       color: #f5f6ef !important;
   }
-
+  .navbar-toggler {
+    padding: 12px 20px; /* Adjust padding for larger button */
+    font-size: 1.5rem; /* Adjust font size */
+}
+.navbar-toggler-icon {
+    width: 30px; /* Increase width of the icon */
+    height: 30px; /* Increase height of the icon */
+}
 /*=================================================================================
                       ABOUT
 ===================================================================================*/
