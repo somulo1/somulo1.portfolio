@@ -169,6 +169,15 @@ a:active {
     cursor: pointer;
 }
 
+/* award button */
+.custom-button {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: white; /* Change text color for better contrast */
+    border: none; /* Remove border if needed */
+}
+
+/* end of award button */
 /*=============================================================================
                   SECTION (Generic)
 ===============================================================================*/
