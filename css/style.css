@@ -24,6 +24,7 @@ h6 {
     font-weight: 700;
     text-transform: uppercase;
     color: #262424;
+    text-align: center;
 }
 
 h1 {
@@ -32,12 +33,17 @@ h1 {
     font-size: 3rem;
     line-height: 5.5rem;
 }
+
+
+
+
 p1{
     color: #ffffff;
     
 }
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    
 }
 
 a {
@@ -86,6 +92,10 @@ a:active {
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
+}
+.navbar-nav {
+    text-align: left; /* Aligns the text to the left */
+    width: 100%; /* Ensures the nav takes full width */
 }
 
 @media (min-width: 992px) {
@@ -988,3 +998,99 @@ footer p {
 
 /* new=============================================================== */
   /* Ensure the profile image on smaller screens is always visible and fixed to the top right */
+
+  
+/* =====================================testimonilas ,blogs and affiliation ============================================ / */
+.single-row {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+.testimonial-container, .blog-container, .affiliation-container {
+    display: flex; 
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.testimonial-item {
+    
+    padding-left: 15px; 
+    margin-bottom: 20px; /* Use bottom margin for spacing */
+    color: #555; 
+    flex: 1 1 300px; /* Flex-grow, Flex-shrink, Flex-basis for responsiveness */
+    max-width: calc(33.33% - 20px); /* Limit the maximum width with spacing */
+}
+
+.blog-post {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: 10px; 
+    flex: 1 1 300px; /* Flex-grow, Flex-shrink, Flex-basis */
+    padding: 10px; 
+    background: #f9f9f9; 
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.blog-image {
+    width: 100%; /* Make image responsive */
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+.affiliation-item {
+    display: flex; 
+    align-items: center; 
+    margin: 10px; 
+    flex: 1 1 300px; /* Flex-grow, Flex-shrink, Flex-basis */
+    padding: 15px; 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.affiliation-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+.testimonial-item:not(:last-child) {
+    border-right: 1px solid #ddd; /* Vertical line between items */
+    padding-right: 20px; /* Adjust spacing */
+}
+
+.text-information {
+    color: #17a2b8; /* Information color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-item, .blog-post, .affiliation-item {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+        max-width: 100%; /* Ensure full width on small screens */
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .testimonial-item:not(:last-child) {
+        border-right: none; /* Remove vertical line on smaller screens */
+    }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .testimonial-item, .blog-post, .affiliation-item {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .affiliation-image {
+        width: 40px; /* Adjust affiliation image size */
+        height: 40px; 
+    }
+}
