@@ -18,12 +18,11 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
     font-family: 'Saira Extra Condensed', serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #262424;
+    color: #000000;
     text-align: center;
 }
 
@@ -33,7 +32,10 @@ h1 {
     font-size: 3rem;
     line-height: 5.5rem;
 }
-
+h5{
+    color: #000000;
+    text-align: left;
+}
 
 
 
@@ -42,7 +44,7 @@ p1{
     
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     
 }
 
@@ -62,6 +64,7 @@ a:active {
     font-family: 'Saira Extra Condensed', serif;
     font-size: 1.35rem;
 }
+
 
 /*================================================================================
                   SOCIAL-ICON
@@ -138,6 +141,7 @@ a:active {
         display: block;
     }
 }
+
 
 /*====================================================================================
                   BUTTON (Generic)
@@ -251,11 +255,59 @@ a:active {
       max-height:1280px;
       max-width: 1920px;
       text-align: bottom;
+     
+      bottom: 0;      /* Aligns to the bottom */
+      left: 0;        /* Aligns to the left */
+      
+      /* Optional: adds a background for contrast */
+      color: rgb(238, 238, 238);   /* Ensures text is readable */
+      padding: 20px;  /* Adds some spacing */
   }
 
   /* #about h1 {
     /* font-size: 100%; */
-   *
+
+.text-left {
+    text-align: left; /* Ensures text is aligned left */
+}
+.portfolio-section {
+    padding: 40px; /* Add padding around the section */
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.greeting-effect {
+    color: black; /* Set text color to black */
+    font-size: 1.8rem; /* Increase font size for prominence */
+    font-weight: bold; /* Make text bold */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.greeting-effect:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.text-break {
+    font-size: 1rem; /* Standard font size for paragraph */
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin-top: 20px; /* Space between greeting and paragraph */
+}
+
+.list-inline-item a {
+    color: #007bff; /* Social media icon color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.list-inline-item a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+#visitor-count {
+    margin-top: 20px; /* Space above visitor count */
+    font-size: 0.9rem; /* Smaller font for visitor count */
+    color: gray; /* Subtle color for visitor count */
+}
 
 /*==================================================================================
                     EXPERIENCE
@@ -1054,8 +1106,8 @@ footer p {
 }
 
 .affiliation-image {
-    width: 50px; 
-    height: 50px; 
+    width: 90px; 
+    height: 90px; 
     border-radius: 50%; 
     object-fit: cover; 
     margin-right: 10px; 
@@ -1090,7 +1142,7 @@ footer p {
     }
 
     .affiliation-image {
-        width: 40px; /* Adjust affiliation image size */
-        height: 40px; 
+        width: 60px; /* Adjust affiliation image size */
+        height: 60px; 
     }
 }

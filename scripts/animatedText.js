@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const textElement = document.getElementById('animated-text');
     const text = textElement.innerHTML; // Get the original HTML content
-    const typingSpeed = 60; // Speed in milliseconds
+    const typingSpeed = 2; // Speed in milliseconds
     let index = 0;
     
     // Function to type text character by character
